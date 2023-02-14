@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simple Text Editor</title>
+</head>
+<body>
+    <section class="mt-12 w-3/4 mx-auto border-blue-600 border-4 p-4 rounded-lg bg-slate-300">
+        <h1 class="text-center text-5xl text-blue-600 mb-8">Welcome to Text Editor</h1>
+        <div>
+            <textarea id="text-editor" class="w-full h-96 border-4 border-blue-600 max-h-96 min-h-96 rounded-lg p-12">This is a sample</textarea>
+        </div>
+        <div class="mt-4 flex justify-around">
+            <div>
+                <button id="bold-btn" class="border-2 border-blue-600 px-3 py-1 rounded-md mr-2">B</button>
+                <button id="italic-btn" class="border-2 border-blue-600 px-3 py-1 rounded-md mr-2">I</button>
+                <button id="underline-btn" class="border-2 border-blue-600 px-3 py-1 rounded-md mr-2">U</button>
+            </div>
+            <div>
+                <button class="alignment border-2 border-blue-600 rounded-md mr-2"><img src="./images/align-left-svgrepo-com.svg" alt="" class="w-8 bg-blue-700 rounded-sm"></button>
+                <button class="alignment border-2 border-blue-600 rounded-md mr-2"><img src="./images/align-right-svgrepo-com.svg" alt="" class="w-8 rounded-sm"></button>
+                <button class="alignment border-2 border-blue-600 rounded-md mr-2"><img src="./images/align-center-svgrepo-com.svg" alt="" class="w-8 rounded-sm"></button>
+                <button class="alignment border-2 border-blue-600 rounded-md mr-2"><img src="./images/align-justify-svgrepo-com.svg" alt="" class="w-8  rounded-sm"></button>
+            </div>
+            <div>
+                <button id="text-normal" class="text-transformation border-2 border-blue-600 bg-blue-700 text-white px-3 py-1 rounded-md mr-2">aA</button>
+                <button id="text-capitalize" class="text-transformation border-2 border-blue-600 px-3 py-1 rounded-md mr-2">Aa</button>
+                <button id="text-lowercase" class="text-transformation border-2 border-blue-600 px-3 py-1 rounded-md mr-2">aa</button>
+                <button id="text-uppercase" class="text-transformation border-2 border-blue-600 px-3 py-1 rounded-md mr-2">AA</button>
+                <input type="number" class="border-2 border-blue-600 rounded-md w-14 p-1" id="font-size" value="18">
+            </div>
+            <div>
+                <input id="text-color" type="color" class="border-2 border-blue-600 rounded-md px-0.5">
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
